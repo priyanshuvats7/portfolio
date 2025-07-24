@@ -1,22 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const resumeLink = document.querySelector("#resume a");
-  resumeLink.addEventListener("click", () => {
-    alert("Thank you for downloading my resume!");
-  });
+// ===== script.js for Priyanshu's Portfolio =====
 
-  // Smooth Scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
+document.addEventListener("DOMContentLoaded", () => { // Dark Mode Toggle const toggle = document.getElementById("darkToggle"); toggle.addEventListener("click", () => { document.body.classList.toggle("dark-mode"); toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙"; });
 
-  // Dark Mode Toggle
-  const toggleBtn = document.getElementById("darkToggle");
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
-});
+// Smooth scroll for nav links document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => { link.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth' }); } }); }); });

@@ -1,71 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priyanshu Vats | Web & Java Developer</title>
+  <title>Priyanshu Vats | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <button id="darkToggle">Toggle Dark Mode</button>
-
-  <header>
-    <h1>Priyanshu Vats</h1>
-    <p>Frontend Web Developer | Core Java Developer</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="Priyanshu Photo.jpeg" alt="Priyanshu Vats">
-    <p>I am a frontend web developer and core Java programmer with a solid foundation in HTML, CSS, JavaScript, and Java. I am currently pursuing my MCA from Quantum University, Roorkee and have successfully completed the first year. I hold a BCA degree from Punjab Technical University, Jalandhar, and completed my schooling (10th and 12th) from CBSE in 2019 and 2021 respectively. I am passionate about building responsive and user-centric web experiences.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Core Java Programming</li>
-      <li>MySQL & Basic SQL Queries</li>
+  <nav class="navbar">
+    <div class="logo">Priyanshu Vats</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
-
-  <section id="projects">
+    <button id="darkToggle">🌙</button>
+  </nav>  <header class="hero">
+    <h1>Hi, I'm <span class="highlight">Priyanshu</span></h1>
+    <p>A Passionate <strong>Web Developer</strong> & <strong>Java Programmer</strong></p>
+    <a href="#projects" class="btn-primary">View My Work</a>
+  </header>  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m currently pursuing MCA from Quantum University, Roorkee and completed BCA from PTU, Jalandhar. I specialize in web development with Java, JavaScript, and a deep interest in user experience. My journey includes building responsive websites and data-driven apps.</p>
+  </section>  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Core Java</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-card">
       <h3>Interactive Portfolio</h3>
-      <p>A responsive and interactive portfolio website showcasing my education, skills, and projects using HTML, CSS, and JavaScript.</p>
+      <p>A responsive and animated portfolio website to showcase my personal brand and skills.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Bengaluru House Prediction</h3>
-      <p>A machine learning-based project using Python that predicts house prices in Bengaluru based on user inputs.</p>
+      <p>Used Python & ML to predict house prices based on location, size, and other features.</p>
     </div>
-    <div class="project">
-      <h3>Web Calculator</h3>
-      <p>A simple and elegant calculator designed using HTML, CSS, and JavaScript for basic arithmetic operations.</p>
+    <div class="project-card">
+      <h3>JS Web Calculator</h3>
+      <p>A clean and functional calculator made with HTML, CSS, and JavaScript.</p>
     </div>
-  </section>
-
-  <section id="internship">
-    <h2>Internships</h2>
-    <p>Completed a 30-day internship in Web Development with CodSoft during June–July 2025, working on live frontend projects and gaining hands-on experience with responsive design and version control.</p>
-  </section>
-
-  <section id="resume">
+  </section>  <section id="resume" class="section">
     <h2>Resume</h2>
-    <a href="Priyanshu Vats Resume MCA.pdf" download>Download My Resume (PDF)</a>
-  </section>
-
-  <section id="contact">
+    <a href="Priyanshu Vats Resume MCA.pdf" download class="btn-primary">Download Resume</a>
+  </section>  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: vatspriyanshu77@gmail.com</p>
     <p>Phone: +91-6397359353</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Priyanshu Vats. All rights reserved.</p>
+  </section>  <footer>
+    <p>&copy; 2025 Priyanshu Vats. Built with ❤️ and clean code.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
